@@ -1,0 +1,32 @@
+# build output
+target/
+dist/
+.sass-cache/
+
+/RUNNING_PID
+
+# dependencies
+node_modules/
+
+# logs
+logs
+npm-debug.log
+
+# IDE files
+/.idea_modules
+/.classpath
+/.project
+/.settings
+.idea
+*.iml
+.metals
+
+# OS files
+.DS_Store
+
+# package-lock.json
+# While this file is supposed to be useful,
+# it regularly causes problems with cross-platform
+# environments.  The forums are filled with issues.
+# Until we get a better solution for this, it shall be ignored.
+package-lock.json
