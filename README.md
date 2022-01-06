@@ -6,8 +6,7 @@ This library is a modifcation of the `react-split-pane`, and purpose is to adapt
 
 ````sh
 npm install React-split-pane-labs
-# or if you use yarn
-yarn add React-split-pane-labs
+
 ## Example Usage
 ```jsx
 <SplitPane split="vertical" minSize={50} defaultSize={100}>
