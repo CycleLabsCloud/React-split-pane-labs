@@ -25,10 +25,10 @@ import {
 } from './SplitPaneFst';
 import {
     useFst,
-} from '../../../cycle-ui/hooks/useFst';
+} from './useFst';
 import {
     assertNever,
-} from '../../../oak/Oak';
+} from '../finiteState/patternMatching';
 import {
     getUnit,
 } from './splitPaneUtils';

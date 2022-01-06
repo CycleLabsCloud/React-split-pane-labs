@@ -1,7 +1,9 @@
 import {
     assertNever,
-    FstTransitionReturnType,
-} from '../../../oak/Oak';
+} from '../finiteState/patternMatching';
+import {
+    FstTransitionReturnType
+} from './Fst';
 import {
     getUnit,
     convertToUnit,

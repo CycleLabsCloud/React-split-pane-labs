@@ -4,9 +4,11 @@ import {
     useReducer,
 } from 'react';
 import {
-    FstTransitionReturnType,
     TaggedUnion,
-} from '../../oak/Oak';
+} from '../fp/TaggedUnion';
+import {
+    FstTransitionReturnType,
+} from '../src/Fst'
 
 const NO_OUTPUT: Array<any> = [];
 function noOutput<Output>(): Array<Output> {
@@ -35,7 +37,7 @@ type FstHook<
     Output extends TaggedUnion<string>
 > = [
     FstReducerState<State, Output>,
-    (a: Action) => void,
+    (a: Action) => void
 ]
 export function useFst<
     State extends TaggedUnion<string>,

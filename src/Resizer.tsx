@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SplitPane.scss';
-import styled from 'styled-components';
+import styled from './StyleComponent';
 
 const Wrapper = styled.div`
   background: #ddd;
@@ -54,12 +54,8 @@ export type ResizerProps = {
     index: number,
     split: 'vertical' | 'horizontal',
     className?: string,
-    // onClick: (e:React.MouseEvent) => void,
-    // onDoubleClick: (e:React.MouseEvent) => void,
     onMouseDown: (e:React.MouseEvent, idx:number) => void,
-    // onTouchEnd: (e:React.TouchEvent) => void,
     onTouchStart: (e:React.TouchEvent, idx:number) => void,
-    // style: string
 };
 export const RESIZER_DEFAULT_CLASSNAME = 'Resizer';
 
@@ -70,10 +66,7 @@ export const Resizer = React.forwardRef<HTMLDivElement, ResizerProps>((
     const {
         index,
         split = 'vertical',
-    //   onClick = () => {},
-    //   onDoubleClick = () => {},
-        onMouseDown, // = () => {},
-    //   onTouchEnd = () => {},
+        onMouseDown,
         onTouchStart = () => {},
     } = props;
 
@@ -81,7 +74,6 @@ export const Resizer = React.forwardRef<HTMLDivElement, ResizerProps>((
         ref: ref,
         'data-attribute': split,
         'data-type': 'Resizer',
-      // onMouseDown(event, index)
         onMouseDown: (e:React.MouseEvent<HTMLDivElement, MouseEvent>) => onMouseDown(
             e, index,
         ),
@@ -91,22 +83,6 @@ export const Resizer = React.forwardRef<HTMLDivElement, ResizerProps>((
                 e, index,
             );
         },
-    //   onTouchEnd: (e:React.TouchEvent<HTMLDivElement>) => {
-    //     e.preventDefault();
-    //     onTouchEnd(e);
-    //   },
-    //   onClick:(e:React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    //     if (onClick) {
-    //       e.preventDefault();
-    //       onClick(e);
-    //     }
-    //   },
-    //   onDoubleClick: (e:React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    //     if (onDoubleClick) {
-    //       e.preventDefault();
-    //       onDoubleClick(e);
-    //     }
-    //   },
     };
 
     return split === 'vertical' ? (

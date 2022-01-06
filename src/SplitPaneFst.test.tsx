@@ -1,7 +1,7 @@
 import {
     behavesLikeFSM,
     behavesLikeFST,
-} from '../../../oak/test-utilities/state-machine';
+} from '../finiteState/state-machine';
 import * as SplitPane from './SplitPaneFst';
 import {
     StateKind,
