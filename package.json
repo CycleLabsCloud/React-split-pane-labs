@@ -28,7 +28,8 @@
     "es6"
   ],
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --env entryPoint=example --mode=development",
+    "build": "webpack",
     "test": "jest"
   },
   "dependencies": {

@@ -85,9 +85,17 @@ function createClientConfig() {
         },
     };
 }
+function createLibraryConfig() {
+    // return webpack config object for building the library
+  }
+
 module.exports = (
     env,
     args,
 ) => {
-    return createClientConfig();
+    if (env && env.entryPoint === 'example') {
+        return createClientConfig();
+    } else {
+        return createLibraryConfig();
+    }
 };
