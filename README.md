@@ -7,6 +7,7 @@ This library is a modifcation of the `react-split-pane`, and purpose is to adapt
 ````sh
 npm install CycleLabsCloud/React-split-pane-labs
 
+````
 ## Example Usage
 ```jsx
 <SplitPane split="vertical" minSize={50} defaultSize={100}>
