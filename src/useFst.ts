@@ -5,7 +5,7 @@ import {
 } from 'react';
 import {
     TaggedUnion,
-} from '../fp/TaggedUnion';
+} from './finiteState/TaggedUnion';
 import {
     FstTransitionReturnType,
 } from '../src/Fst'

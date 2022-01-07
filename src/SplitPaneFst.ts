@@ -1,6 +1,6 @@
 import {
     assertNever,
-} from '../finiteState/patternMatching';
+} from './finiteState/patternMatching';
 import {
     FstTransitionReturnType
 } from './Fst';

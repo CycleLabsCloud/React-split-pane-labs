@@ -28,7 +28,7 @@ import {
 } from './useFst';
 import {
     assertNever,
-} from '../finiteState/patternMatching';
+} from './finiteState/patternMatching';
 import {
     getUnit,
 } from './splitPaneUtils';

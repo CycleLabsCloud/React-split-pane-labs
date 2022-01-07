@@ -3,7 +3,7 @@ import {
 } from './TaggedUnion';
 import {
     FstTransitionReturnType,
-} from '../src/Fst';
+} from '../Fst';
 
 export type FSMTestCase<State, Action> = {
     description: string,

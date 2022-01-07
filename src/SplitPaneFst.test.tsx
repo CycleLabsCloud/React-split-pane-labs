@@ -1,7 +1,7 @@
 import {
     behavesLikeFSM,
     behavesLikeFST,
-} from '../finiteState/state-machine';
+} from './finiteState/state-machine';
 import * as SplitPane from './SplitPaneFst';
 import {
     StateKind,

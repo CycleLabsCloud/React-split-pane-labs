@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SplitPane.scss';
-import styled from './StyleComponent';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background: #ddd;

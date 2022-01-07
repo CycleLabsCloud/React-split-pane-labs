@@ -1,5 +1,5 @@
 {
-  "name": "react-split-pane",
+  "name": "@CycleLabsCloud/React-split-pane-labs",
   "description": "React split-pane component",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,17 +9,17 @@
     "dist",
     "index.d.ts"
   ],
-  "version": "0.1.92",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomkp/react-split-pane"
+    "url": "https://github.com/CycleLabsCloud/React-split-pane-labs"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomkp/react-split-pane"
+    "url": "https://github.com/CycleLabsCloud/React-split-pane-labs"
   },
-  "homepage": "https://github.com/tomkp/react-split-pane",
-  "author": "tomkp <tom@tomkp.com>",
+  "homepage": "https://github.com/CycleLabsCloud/React-split-pane-labs",
+  "author": "",
   "keywords": [
     "react",
     "react-component",
@@ -28,55 +28,35 @@
     "es6"
   ],
   "scripts": {
-    "start": "parcel website/index.html",
-    "prebuild": "yarn run clean",
-    "build": "rollup -c",
-    "build:watch": "rollup -c --watch",
-    "clean": "rimraf dist",
-    "test": "BABEL_ENV=test mochify -R spec --transform babelify",
-    "test:watch": "BABEL_ENV=test mochify -R spec --watch --transform babelify",
-    "test:coverage": "BABEL_ENV=test mochify --plugin [ mochify-istanbul --exclude '**/test/**' --report lcovonly ] --transform babelify && cat lcov.info | coveralls && rm lcov.info",
-    "prettier": "prettier --write '{src,test}/**/*.js'",
-    "lint": "eslint src test",
-    "release": "standard-version",
-    "build:storybook": "build-storybook -o build",
-    "storybook": "start-storybook -p ${PORT:-3001} -h 0.0.0.0",
-    "deploy": "gh-pages -d build",
-    "prepublishOnly": "yarn run test && yarn run build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "start": "webpack serve",
+    "test": "jest"
   },
   "dependencies": {
     "@types/inline-style-prefixer": "^5.0.0",
+    "inline-style-prefixer": "^6.0.1",
     "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "inline-style-prefixer": "^6.0.1"
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.5",
-    "@babel/preset-env": "7.10.4",
-    "@babel/preset-react": "7.10.4",
-    "@testing-library/dom": "7.31.0",
-    "@testing-library/jest-dom": "5.11.3",
-    "@testing-library/react": "10.4.8",
-    "@testing-library/react-hooks": "3.4.1",
-    "@testing-library/user-event": "12.8.3",
-    "@typescript-eslint/eslint-plugin": "3.7.1",
-    "@typescript-eslint/parser": "3.7.1",
-    "@types/jest": "26.0.7",
-    "@types/node": "14.0.27",
+    "@types/jest": "^26.0.7",
     "@types/react-dom": "16.9.8",
-    "identity-obj-proxy": "3.0.0",
+    "@types/styled-components": "^5.1.19",
+    "copy-webpack-plugin": "^10.2.0",
+    "css-loader": "^6.5.1",
     "jest": "26.6.3",
-    "jest-junit": "11.1.0",
-    "postcss": "8.3.11",
-    "react-test-renderer": "17.0.1",
-    "sass": "1.29.0",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^12.4.0",
     "scss-parser": "1.0.4",
+    "source-map-loader": "^3.0.1",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.3",
     "ts-jest": "26.4.4",
-    "typescript": "4.0.5"
+    "ts-loader": "^9.2.6",
+    "typescript": "4.0.5",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
   }
 }

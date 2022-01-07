@@ -1,6 +1,6 @@
 import {
     TaggedUnion,
-} from '../finiteState/TaggedUnion';
+} from './finiteState/TaggedUnion';
 
 // Finite State Transducer
 export type FstTransitionReturnType<
