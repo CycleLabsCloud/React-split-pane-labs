@@ -5,7 +5,7 @@ This library is a modifcation of the `react-split-pane`, and purpose is to adapt
 ## Installing
 
 ````sh
-npm install React-split-pane-labs
+npm install CycleLabsCloud/React-split-pane-labs
 
 ## Example Usage
 ```jsx
