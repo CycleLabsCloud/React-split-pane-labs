@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "start": "webpack serve --env entryPoint=example --mode=development",
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "test": "jest"
   },
   "dependencies": {
