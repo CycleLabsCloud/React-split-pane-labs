@@ -12,13 +12,13 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CycleLabsCloud/react-split-pane"
+    "url": "https://github.com/cyclelabscloud/react-split-pane"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CycleLabsCloud/react-split-pane"
+    "url": "https://github.com/cyclelabscloud/react-split-pane"
   },
-  "homepage": "https://github.com/CycleLabsCloud/react-split-pane",
+  "homepage": "https://github.com/cyclelabscloud/react-split-pane",
   "author": "",
   "keywords": [
     "react",
