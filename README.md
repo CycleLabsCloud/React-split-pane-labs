@@ -1,4 +1,4 @@
-# React-split-pane-labs
+# React-Split-Pane
 
 This library is a modifcation of the `react-split-pane`, and purpose is to adapt it into Typescript and SCSS. For further detailed infromation on the properties check out [tomkp/react-split-pane](https://github.com/tomkp/react-split-pane).  
 
