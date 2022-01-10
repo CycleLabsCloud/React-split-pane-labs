@@ -1,5 +1,5 @@
 {
-  "name": "@CycleLabsCloud/React-split-pane-labs",
+  "name": "@cyclelabscloud/react-split-pane",
   "description": "React split-pane component",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,13 +12,13 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CycleLabsCloud/React-split-pane-labs"
+    "url": "https://github.com/CycleLabsCloud/react-split-pane"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CycleLabsCloud/React-split-pane-labs"
+    "url": "https://github.com/CycleLabsCloud/react-split-pane"
   },
-  "homepage": "https://github.com/CycleLabsCloud/React-split-pane-labs",
+  "homepage": "https://github.com/CycleLabsCloud/react-split-pane",
   "author": "",
   "keywords": [
     "react",
