@@ -23,8 +23,8 @@ npm install CycleLabsCloud/react-split-pane
 ```
 
 # License
-**React-split-pane-labs** is licensed under the [MIT License](http://opensource.org/licenses/MIT).<br>
-**react-split-pane** is licensed under the [MIT License](http://opensource.org/licenses/MIT).<br>
+**cyclelabscloud/React-split-pane** is licensed under the [MIT License](http://opensource.org/licenses/MIT).<br>
+**tomkp/react-split-pane** is licensed under the [MIT License](http://opensource.org/licenses/MIT).<br>
 
 ## Contributing
 If you have any questions in regards to the library please feel free to reach out.
